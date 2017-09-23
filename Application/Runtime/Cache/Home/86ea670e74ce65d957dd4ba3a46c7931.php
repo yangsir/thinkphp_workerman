@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?>Thinkphp集成Workerman，更多请关注：<a href="http://webyang.net">webyang.net</a>
