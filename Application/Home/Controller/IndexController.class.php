@@ -1,6 +1,6 @@
 <?php
 /**
- * workermen启动控制器
+ * workermen web测试控制器
  * author webyang.net
  */
 
@@ -12,7 +12,8 @@ class IndexController extends Controller {
     public function index() {
         $this->show('Thinkphp集成Workerman，更多请关注：<a href="http://webyang.net">webyang.net</a>','utf-8');
     }
-    
+
+    //访问此方法查看调用
     public function test() {
 
         $uid = 1;

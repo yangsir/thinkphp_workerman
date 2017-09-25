@@ -52,13 +52,13 @@ class WorkermanController{
             // 判断类对应文件是否载入
             if(!class_exists($class))
             {
-                $include_file = __DIR__ . "/WmServices/$class.php";
+                $include_file = __DIR__ . "/Library/WmServices/$class.php";
                 if(is_file($include_file))
                 {
                     require_once $include_file;
                 }
 
-                $className = '\Cli\Controller\WmServices\\'.$class;
+                $className = '\Cli\Library\WmServices\\'.$class;
                 if(!class_exists($className))
                 {
                     $code = 404;

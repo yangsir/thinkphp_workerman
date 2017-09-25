@@ -1,9 +1,9 @@
 <?php
 /**
- * workermen启动控制器
+ * workermen功能测试类
  * author webyang.net
  */
-namespace Cli\Controller\WmServices;
+namespace Cli\Library\WmServices;
 
 class User
 {
@@ -20,6 +20,10 @@ class User
                 'name'    => 'webyang.net',
                 'message' => '',
             );
+
+            //数据库调用
+            //$arr = M('Users')->find($id);
+            //$result['name'] = $arr['username'];
         }
 
         return $result;
