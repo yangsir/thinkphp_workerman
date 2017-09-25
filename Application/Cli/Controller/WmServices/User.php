@@ -1,4 +1,8 @@
 <?php
+/**
+ * workermen启动控制器
+ * author webyang.net
+ */
 namespace Cli\Controller\WmServices;
 
 class User
@@ -7,7 +11,7 @@ class User
     {
         $result = array(
             'status'  => 0,
-            'message' => '',
+            'message' => '请求失败',
         );
 
         if($id) {
@@ -18,9 +22,6 @@ class User
             );
         }
 
-        \Think\log::record('entera:'.$id);
-
         return $result;
     }
-
 }

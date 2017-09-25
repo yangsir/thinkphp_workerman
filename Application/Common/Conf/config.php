@@ -7,8 +7,8 @@ return array(
     'URL_MODEL'            => 2,
 
     'RPC_ADDRESS' => array(
-        'tcp://127.0.0.1:10986',
-        'tcp://127.0.0.1:10986',
+        'tcp://127.0.0.1:10086',
+        'tcp://127.0.0.1:10086',
     ),
 
     'DB_TYPE'          => 'mysql', // 数据库类型

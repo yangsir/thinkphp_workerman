@@ -1,4 +1,9 @@
 <?php
+/**
+ * workermen启动控制器
+ * author webyang.net
+ */
+
 namespace Home\Controller;
 use Think\Controller;
 
@@ -7,7 +12,6 @@ class IndexController extends Controller {
     public function index() {
         $this->show('Thinkphp集成Workerman，更多请关注：<a href="http://webyang.net">webyang.net</a>','utf-8');
     }
-
     
     public function test() {
 
@@ -18,7 +22,7 @@ class IndexController extends Controller {
 
         // ==同步调用==
         $return = $rpcClient->getName($uid);
-        var_dump($return);
+        var_dump($return);exit;
 
         // ==异步调用==
         $return = $rpcClient->asend_getName($uid);
